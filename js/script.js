@@ -1,27 +1,27 @@
-// GET THE DAY NUMBER
-// get the day number from a new date object
-// assign to a variable
+// OBTENER EL NÚMERO DEL DÍA
+// obtener el número de día de un nuevo objeto de fecha
+// asignar a una variable
 let today = new Date().getDay();
-// MATCH DAY NUMBER WITH NODE LIST INDEX
-// Sunday is the first JavaScript day but it's
-// the last day in our list so change 0 to 6
-// and decrement all other day numbers so they
-// match with the node list indexes
+// NÚMERO DEL DÍA DEL PARTIDO CON ÍNDICE DE LISTA DE NODOS
+// El domingo es el primer día de JavaScript pero es
+// el último día en nuestra lista así que cambie de 0 a 6
+// y disminuir todos los demás números de días para que
+// coincidir con los índices de la lista de nodos
 if (today === 0){
     today = 6;
 }else{
     today--;
 }
 
-// SELECT ALL DTs
-// select all the description term elements
-// assign to a variable
+// SELECCIONAR TODOS LOS DT
+// seleccione todos los elementos del término de descripción
+// asignar a una variable
 const dts = document.querySelectorAll('dt');
-// ADD A CLASS TO TODAY'S DT
-// use the day number (today variable) to add
-// the 'today' class to the appropriate dt
-// element so it and the adjacent dd can be
-// styled in CSS
+// AÑADE UNA CLASE AL DT DE HOY
+// use el número de día (variable de hoy) para agregar
+// la clase 'hoy' al dt apropiado
+// elemento para que él y el dd adyacente puedan ser
+// diseñado en CSS
 dts[today].className = 'today';
-// node lists begin at 0, so day 1 in our list
-// (Monday) will be node 0
+// Las listas de nodos comienzan en 0, por lo que el día 1 de nuestra lista
+// (lunes) será el nodo 0
